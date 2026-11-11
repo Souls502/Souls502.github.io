@@ -6,13 +6,15 @@
 <title>星月游戏盒 - 官方下载</title>
 <style>
 *{box-sizing:border-box}
-body{margin:0;background:linear-gradient(160deg,#160d35,#30206b,#100c24);color:white;font-family:Arial,"Microsoft YaHei",sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
-.card{width:100%;max-width:430px;text-align:center;background:#ffffff12;border:1px solid #ffffff25;border-radius:24px;padding:28px 22px;box-shadow:0 15px 50px #0006}
-.cover{width:100%;border-radius:16px;display:block;margin-bottom:22px}
+body{margin:0;background:linear-gradient(160deg,#160d35,#30206b,#100c24);color:white;font-family:Arial,"Microsoft YaHei",sans-serif;min-height:100vh;padding:24px}
+.card{width:100%;max-width:900px;margin:20px auto;text-align:center;background:#ffffff12;border:1px solid #ffffff25;border-radius:24px;overflow:hidden;box-shadow:0 15px 50px #0006}
+.banner{width:100%;display:block;aspect-ratio:16/5;object-fit:cover}
+.content{padding:28px 22px}
+.cover{width:100%;max-width:300px;border-radius:16px;display:block;margin:0 auto 22px}
 .logo{font-size:28px;font-weight:bold;margin:12px 0}
 .desc{color:#ddd;line-height:1.8;font-size:15px}
 .version{color:#c7b8ff;font-size:13px;margin:18px 0}
-.download{display:block;background:linear-gradient(90deg,#9b65ff,#6740e8);padding:16px;border-radius:14px;color:white;text-decoration:none;font-size:18px;font-weight:bold;margin:22px 0}
+.download{display:block;background:linear-gradient(90deg,#9b65ff,#6740e8);padding:16px;border-radius:14px;color:white;text-decoration:none;font-size:18px;font-weight:bold;margin:22px auto;max-width:400px}
 .download.disabled{opacity:.55;pointer-events:none}
 .tips{font-size:13px;color:#bbb;line-height:1.8}
 .status{font-size:13px;color:#d8ceff;min-height:20px}
@@ -21,6 +23,8 @@ footer{color:#8f82b7;font-size:12px;margin-top:24px}
 </head>
 <body>
 <div class="card">
+<img class="banner" src="https://raw.githubusercontent.com/Souls502/Souls502.github.io/refs/heads/main/file_0000000083e481f59946d7c1a82af93d.png" alt="星月游戏盒宣传横幅">
+<div class="content">
 <img class="cover" src="https://raw.githubusercontent.com/Souls502/xingyue-gamebox/refs/heads/main/file_00000000d61c81f59b5a0269723f8f0a.png" alt="星月游戏盒封面">
 <div class="logo">✦ 星月游戏盒</div>
 <div class="desc">发现精彩游戏，畅享游戏乐趣。<br>游戏介绍、封面展示与游戏下载，一站式体验。</div>
@@ -29,6 +33,7 @@ footer{color:#8f82b7;font-size:12px;margin-top:24px}
 <div class="status" id="status"></div>
 <div class="tips">安装提示：下载完成后，打开 APK 文件，按照手机提示完成安装。</div>
 <footer>星月游戏盒 · 官方下载页面</footer>
+</div>
 </div>
 <script>
 (async function(){
